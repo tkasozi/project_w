@@ -1,5 +1,5 @@
 Arguments: 
-  /usr/local/Cellar/node/9.8.0/bin/node /usr/local/Cellar/yarn/1.5.1_1/libexec/bin/yarn.js dev
+  /usr/local/Cellar/node/9.8.0/bin/node /usr/local/Cellar/yarn/1.5.1_1/libexec/bin/yarn.js server
 
 PATH: 
   /anaconda3/bin:/usr/local/bin:/usr/bin:/bin:/usr/sbin:/sbin
@@ -15,13 +15,12 @@ Platform:
 
 npm manifest: 
   {
-    "name": "project-w-tools",
+    "name": "project_w",
     "version": "0.1.0",
     "private": true,
     "proxy": "http://localhost:5000/",
     "dependencies": {
       "express": "^4.16.3",
-      "nodemon": "^1.17.2",
       "react": "^16.2.0",
       "react-dom": "^16.2.0",
       "react-scripts": "1.1.1"
@@ -7352,7 +7351,7 @@ Trace:
   Error: Command failed.
   Exit code: 1
   Command: sh
-  Arguments: -c concurrently --kill-others-on-fail "yarn server" "yarn client"
+  Arguments: -c nodemon server.js
   Directory: /Users/tkasozi/Google Drive/projectW/project_w
   Output:
   
